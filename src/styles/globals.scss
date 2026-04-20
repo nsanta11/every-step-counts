@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --cream: #F5F0E8;
+  --dark: #1a1a1a;
+  --mid: #444444;
+  --mint: #5AC454;
+  --blue: #0076B1;
+  --yellow: #FFC107;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-figtree: 'Figtree', sans-serif;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--font-figtree);
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins);
+}
+
+button {
+  font-family: var(--font-figtree);
+}
+
+section + section,
+section + footer {
+  border-top: 1px solid var(--cream);
+}

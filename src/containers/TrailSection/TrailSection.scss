@@ -1,0 +1,9 @@
+.trail-section {
+  background-color: var(--yellow);
+  padding: 96px 24px;
+
+  &__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,53 @@
+.footer {
+  background-color: var(--blue);
+
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    font-family: var(--font-figtree);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cream);
+    line-height: 1.5;
+
+    @media (max-width: 768px) {
+      padding: 48px 24px;
+    }
+  }
+
+  &__logo {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__tagline {
+    max-width: 600px;
+    margin-bottom: 8px;
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    color: var(--cream);
+    text-decoration: underline;
+    transition: opacity 150ms;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}

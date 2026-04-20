@@ -1,0 +1,9 @@
+.accordion-section {
+  background-color: var(--mint);
+  padding: 96px 24px;
+
+  &__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
