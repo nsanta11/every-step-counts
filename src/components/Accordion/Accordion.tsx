@@ -19,10 +19,11 @@ interface AccordionItem {
 interface AccordionProps {
   items: AccordionItem[];
   variant?: 'default' | 'trail';
+  defaultOpenId?: string | null;
 }
 
-export default function Accordion({ items, variant = 'default' }: AccordionProps) {
-  const [openId, setOpenId] = useState<string | null>(null);
+export default function Accordion({ items, variant = 'default', defaultOpenId = null }: AccordionProps) {
+  const [openId, setOpenId] = useState<string | null>(defaultOpenId);
 
   const toggle = (id: string) => setOpenId(prev => prev === id ? null : id);
 
@@ -31,10 +32,10 @@ export default function Accordion({ items, variant = 'default' }: AccordionProps
       {items.map(item => {
         const isOpen = openId === item.id;
         return (
-          <div key={item.id} className={`accordion__item${isOpen ? ' accordion__item--open' : ''}`}>
+          <div key={item.id} className={`accordion__item${isOpen ? ' accordion__item--open' : ''}`} onClick={() => toggle(item.id)}>
             <button
               className="accordion__trigger"
-              onClick={() => toggle(item.id)}
+              onClick={(e) => { e.stopPropagation(); toggle(item.id); }}
               aria-expanded={isOpen}
             >
               <span className="accordion__trigger-main">

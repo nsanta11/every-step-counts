@@ -51,7 +51,7 @@ export default function AccordionSection() {
     <section className="accordion-section">
       <div className="accordion-section__inner">
         <SectionTitle>Keep the Conversation Going</SectionTitle>
-        <Accordion items={items} />
+        <Accordion items={items} defaultOpenId="one" />
       </div>
     </section>
   );

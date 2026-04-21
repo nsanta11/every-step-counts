@@ -1,4 +1,4 @@
-import logo from '@/assets/images/parents-empowered-logo.png';
+import logo from '@/assets/images/pe-footer-logo.svg';
 import './FooterSection.scss';
 
 export default function FooterSection() {
