@@ -1,6 +1,6 @@
 import Header from '@/containers/Header/Header';
 import HeroSection from '@/containers/HeroSection/HeroSection';
-import AccordionSection from '@/containers/AccordionSection/AccordionSection';
+import ConversationSection from '@/containers/ConversationSection/ConversationSection';
 import TrailSection from '@/containers/TrailSection/TrailSection';
 import FooterSection from '@/containers/FooterSection/FooterSection';
 
@@ -9,7 +9,7 @@ export default function App() {
     <>
       <Header />
       <HeroSection />
-      <AccordionSection />
+      <ConversationSection />
       <TrailSection />
       <FooterSection />
     </>

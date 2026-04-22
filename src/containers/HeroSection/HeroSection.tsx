@@ -1,4 +1,4 @@
-import heroImg from '@/assets/images/every-step-counts.png';
+import heroImg from '@/assets/images/summit-hero.jpg';
 import './HeroSection.scss';
 
 export default function HeroSection() {

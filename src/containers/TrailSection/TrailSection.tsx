@@ -10,59 +10,79 @@ const MapMarkerIcon = () => (
 const trails = [
   {
     id: 'kamas',
-    question: 'KAMAS',
+    question: 'Kamas Trails',
     icon: <MapMarkerIcon />,
     locations: [
       {
+        name: 'Kamas Food Pantry',
+        description: '1 Trail. Theme: Rule Setting (Spanish)',
+      },
+      {
         name: 'Kamas Food Town',
-        description: '3 Trails. Themes: Bonding, Rule Setting, Checking-in (Spanish)',
+        description: '2 Trails. Themes: Rule Setting, Bonding (Spanish)',
       },
       {
         name: 'Liquor & Wine Outlet',
-        description: '2 Trails. Themes: Bonding, Knowing the Risks (Spanish)',
+        description: '2 Trails. Themes: Knowing the Risks (English & Spanish)',
+      },
+      {
+        name: 'South Summit Aquatic and Fitness Center',
+        description: '2 Trails. Themes: Bonding (English & Spanish)',
       },
       {
         name: 'Summit County Library - Kamas Valley Branch',
-        description: '1 Trail. Themes: Bonding',
-      },
-      {
-        name: 'South Summit Aquatic & Fitness Center',
-        description: '1 Trail. Themes: Bonding',
+        description: '2 Trails. Themes: Checking-in (English & Spanish)',
       },
     ],
   },
   {
     id: 'coalville',
-    question: 'COALVILLE',
+    question: 'Coalville Trails',
     icon: <MapMarkerIcon />,
     locations: [
-      // {
-      //   name: 'Provo River Parkway',
-      //   description: 'A flat, paved trail that follows the Provo River through Provo and Orem. Perfect for a casual walk or bike ride with kids of any age.',
-      // },
-      // {
-      //   name: 'Rock Canyon Trail',
-      //   description: 'A scenic trail at the base of the Wasatch Mountains in Provo with easy access and beautiful canyon views.',
-      // },
+      {
+        name: 'City Hall',
+        description: '2 Trails. Themes: Rule Setting (English & Spanish)',
+      },
+      {
+        name: 'Neena\'s Market',
+        description: '1 Trail. Theme: Bonding (Spanish)',
+      },
+      {
+        name: 'Summit County Health',
+        description: '1 Trail. Theme: Knowing the Risks (English & Spanish)',
+      },
+      {
+        name: 'Summit County Library - Coalville Branch',
+        description: '1 Trail. Theme: Checking-in',
+      },
     ],
   },
   {
     id: 'park-city',
-    question: 'PARK CITY',
+    question: 'Park City Trails',
     icon: <MapMarkerIcon />,
     locations: [
-      // {
-      //   name: 'Arches National Park Trails',
-      //   description: 'Iconic red rock scenery with trails ranging from easy walks to moderate hikes. A bucket-list destination for Utah families.',
-      // },
-      // {
-      //   name: 'Red Hills Parkway – St. George',
-      //   description: "A paved trail through St. George's stunning red rock landscape. Flat and family-friendly with easy parking.",
-      // },
-      // {
-      //   name: 'Zion Riverwalk',
-      //   description: 'A paved, accessible trail along the Virgin River inside Zion National Park. One of the most scenic easy walks in the state.',
-      // },
+      {
+        name: 'The Market at Park City',
+        description: '2 Trails. Themes: Bonding, Checking-in',
+      },
+      {
+        name: 'Park City Ice Arena',
+        description: '1 Trail. Theme: Rule Setting',
+      },
+      {
+        name: 'Park City Library',
+        description: '1 Trail. Theme: Bonding',
+      },
+      {
+        name: 'Summit County Health Department',
+        description: '2 Trail. Themes: Knowing the Risks, Rule Setting (Spanish)',
+      },
+      {
+        name: 'Wasatch Pediatrics',
+        description: '1 Trail. Theme: Bonding',
+      },
     ],
   },
 ];
