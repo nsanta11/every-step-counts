@@ -6,7 +6,10 @@ export default function FooterSection() {
     <footer className="footer">
       <div className="footer__inner">
 
-        <img src={logo} alt="Parents Empowered" className="footer__logo" />
+        {/* <img src={logo} alt="Parents Empowered" className="footer__logo" /> */}
+        <a href="https://parentsempowered.org" className="footer__logo" target="_blank">
+          <img src={logo} alt="Parents Empowered" className="footer__logo" />
+        </a>
 
         <p className="footer__tagline">
           Walk and talk with your kids. Every step is a chance to connect, listen, and make a difference in their lives.
@@ -16,10 +19,10 @@ export default function FooterSection() {
 
         <ul className="footer__links">
           <li>
-            <a href="https://parentsempowered.org/privacy-policy/" className="footer__link">Privacy Policy</a>
+            <a href="https://parentsempowered.org/privacy-policy/" className="footer__link" target="_blank">Privacy Policy</a>
           </li>
           <li>
-            <a href="https://parentsempowered.org/terms-of-use/" className="footer__link">Terms of Use</a>
+            <a href="https://parentsempowered.org/terms-of-use/" className="footer__link" target="_blank">Terms of Use</a>
           </li>
         </ul>
 

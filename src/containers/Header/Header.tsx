@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__inner">
-        <a href="https://parentsempowered.org" className="header__logo-link">
+        <a href="https://parentsempowered.org" className="header__logo-link" target="_blank">
           <img src={peHeaderLogo} alt="Parents Empowered" className="header__logo" />
         </a>
 
